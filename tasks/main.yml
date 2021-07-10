@@ -1,7 +1,7 @@
 ---
 
 - name: install systemd
-  pacman:
+  apt:
     name: systemd
     state: present
 
@@ -30,5 +30,3 @@
     src: /run/systemd/resolve/stub-resolv.conf
     dest: /etc/resolv.conf
     state: link
-
-...
